@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; /*altera no gap entre o header e o main*/
+    background-color: #303236;
+    height: 100px;
+    display: flex; /*deixa o conteudo na horizontal*/
+    justify-content: space-between;
+    align-items: center; /*deixa o conteudo no meio do header (verticalmente)*/
+    z-index: 100;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'cabin';
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none; /*tira a barrinha de baixo dos textos*/
+    text-transform: uppercase;/*deixa os textos em caixa alta*/
+    -webkit-text-stroke: 1px #000000;/*adiciona uma borda preta nas letras*/
+    padding: 0 15px; /*da espaço horizontal entre as palavras no menu*/
+}
+
+.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+}
+
+
+.sociais{
+    width: 25%; /*Muda a largura do logo e dos botoes do header*/
+}
+
+.sociais button{
+    width:50px;
+    height: 50px;
+    background-color: #303236;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sociais button:hover{ /*não tá funcionando*/
+    color: purple;
+}
+
+.sociais button i{
+    font-size: 25px;
+    color: white;
+}
+
+main{ /*usei esse comando para tentar arrumar o tamanho do body*/
+    height: 100%;
+}
+
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 130px; /*Mexe com a altura do .produto (texto e camisa) no body*/
+    margin-right: 190px;
+}
+
+.conteudo-produto {
+    margin-left: 20%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+     /*Mexe com a altura do .produto (texto) no body*/
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'black ops one';
+    font-weight:lighter;
+    color: white;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'cabin';
+    font-weight:normal;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+#preco {
+    font-size: 48px;
+    font-family: 'dosis';
+    font-weight:600;
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+#descricao {
+    font-size: 14px;
+    font-family: 'cabin';
+    font-style: italic;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.botao-adicionar {
+    text-align: left;
+    margin-top: 40px;
+    position: relative;
+    padding: 10px 15px;
+    background-color: #585b61;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border-style: none;
+    font-size: 18px;
+    }
+
+footer{
+    font-size: 20px;
+    font-family: 'cabin';
+    font-style:normal;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
